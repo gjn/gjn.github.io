@@ -1,4 +1,1 @@
-gjn.github.io
-=============
-
-gjn's page
+[gjn.github.io](http://gjn.github.io)
