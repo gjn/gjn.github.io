@@ -1,0 +1,28 @@
+{
+  "locals": {
+    "url": "http://gjn.github.io",
+    "name": "Up In Code",
+    "owner": "gjn",
+    "description": "For every complex problem there is an answer that is clear, simple, and wrong."
+  },
+  "plugins": [
+    "./plugins/paginator.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 10
+  },
+  "output": "../",
+  "port": 1337
+}

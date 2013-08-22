@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Up In Code</title>
+    <atom:link href="http://gjn.github.io/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://gjn.github.io</link>
+    <description>For every complex problem there is an answer that is clear, simple, and wrong.</description>
+    <pubDate>Thu, 22  Aug 2013 20:00:00 +0200</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>The Beginning</title>
+      <link>http://gjn.github.io/articles/the-beginning/</link>
+      <pubDate>Thu, 22  Aug 2013 20:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://gjn.github.io/articles/the-beginning/</guid>
+      <author></author>
+      <description>&lt;pre&gt;&lt;code class=&quot;lang-c&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; main(&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt;)
+{
+  printf(&lt;span class=&quot;string&quot;&gt;&quot;Hello world\n&quot;&lt;/span&gt;);
+  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
+}&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+  </channel>
+</rss>
