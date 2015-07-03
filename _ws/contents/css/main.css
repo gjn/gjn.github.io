@@ -1,4 +1,4 @@
-
+/* Vikings color: #4F2682; */
 h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
   margin: 0; padding: 0; border: 0;
 }
@@ -84,7 +84,7 @@ hr {
 /* page header */
 
 .header {
-  margin: 3em 0 5em;
+  margin: 0.4em 0 0.4em;
 }
 
 .header h1 {
@@ -110,7 +110,7 @@ hr {
 }
 
 .header .description {
-  font-size: 1.2em;
+  font-size: 0.9em;
   font-style: italic;
   text-align: center;
   margin-top: -0.3em;
@@ -118,8 +118,7 @@ hr {
 
 body.article-detail > header h1 {
   font-size: 2.5em;
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: -0.2em;
 }
 
@@ -181,11 +180,10 @@ footer .copy, footer .copy a {
 }
 
 .article header h2 {
-  font-style: italic;
   text-align: center;
   font-weight: 400;
   margin: 0.8em 0;
-  font-size: 1.4em;
+  font-size: 1.8em;
 }
 
 .article header h2 a {
