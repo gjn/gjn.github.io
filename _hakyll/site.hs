@@ -5,8 +5,14 @@ import           Hakyll
 
 
 --------------------------------------------------------------------------------
+-- Adapt default configuration (TODO: adapt destination path once complete)
+conf = Hakyll.defaultConfiguration
+  { destinationDirectory = "_site"
+  }
+--
+
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith conf $ do
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
@@ -21,8 +27,9 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
-    match "posts/*" $ do
-        route $ setExtension "html"
+    match "posts/*/*/*" $ do
+        --route $ setExtension "html"
+        route $ gsubRoute "posts/" (const "") `composeRoutes` setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
@@ -31,7 +38,7 @@ main = hakyll $ do
     create ["archive.html"] $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
+            posts <- recentFirst =<< loadAll "posts/*/*/*"
             let archiveCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Archives"            `mappend`
@@ -46,7 +53,7 @@ main = hakyll $ do
     match "index.html" $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
+            posts <- recentFirst =<< loadAll "posts/*/*/*"
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Home"                `mappend`
