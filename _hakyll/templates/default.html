@@ -10,25 +10,31 @@
   </head>
   <body>
     <div id="header">
-      <div id="logo">
-        <h1><a href="/">Up In Code</a></h1>
-        <p class="description">For every complex problem there is an anser that is clear, simple and wrong.</p>
-      </div>
-      <div id="navigation">
-        <a href="/about.html">About</a>
-        <a href="/archive.html">Archive</a>
+      <div class="content-wrap">
+        <div id="logo">
+          <h1><a href="/">Up In Code</a></h1>
+          <p class="description">For every complex problem there is an answer that is clear, simple and wrong.</p>
+        </div>
       </div>
     </div>
 
     <div id="content">
-      <h1>$title$</h1>
-      $body$
+      <div class="content-wrap">
+        <h1>$title$</h1>
+        $body$
+      </div>
     </div>
 
     <div id="footer">
-      <section class="copyright">
-        <p>&copy; 2015 gjn &mdash; powered by <a href="http://jaspervdj.be/hakyll">Hakyll</a></p>
-      </section>
+      <div class="content-wrap">
+        <span id="navigation">
+          <a href="/about.html">About</a>
+          <a href="/archive.html">Archive</a>
+        </span>
+        <span id="copyright">
+          &copy; 2015 gjn &mdash; powered by <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </span>
+      </div>
     </div>
   </body>
 </html>

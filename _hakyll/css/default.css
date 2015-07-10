@@ -1,3 +1,4 @@
+/* Vikings color: #4F2682; */
 h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
   margin: 0; padding: 0; border: 0;
 }
@@ -8,6 +9,11 @@ body {
   line-height: 1.52;
   background-color: #f8f8f8;
   text-rendering: optimizeLegibility;
+}
+
+.content-wrap {
+  width: 34em;
+  margin: 0 auto;
 }
 
 body, a {
@@ -60,7 +66,7 @@ blockquote {
 
 /* page header */
 #header {
-  margin: 3em 0 5em;
+  margin: 0.5em 0 0.5em;
 }
 
 #header h1 {
@@ -86,52 +92,23 @@ blockquote {
 }
 
 #header .description {
-  font-size: 1.2em;
+  font-size: 1.0em;
   font-style: italic;
   text-align: center;
   margin-top: -0.3em;
 }
 
-#header #navigation {
-  text-align: center;
-}
-
-/*
-div#header #navigation a {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 12px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-*/
-
 /* page footer */
-
 #footer {
-  margin: 3em 0;
-}
-
-#footer .copyright {
-  text-align: center;
+  margin: 1em 0;
   font-size: 0.7em;
   font-style: italic;
-  margin-top: 1em;
 }
 
-#footer .copyright, #footer .copyright a {
+#footer, #footer a {
   color: #8e8e8e;
 }
 
-/*
-div#footer {
-    border-top: solid 2px black;
-    color: #555;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
-    text-align: right;
+#footerdiv {
+  align-self: left;
 }
-*/
-
