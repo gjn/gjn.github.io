@@ -32,7 +32,7 @@ main = hakyllWith conf $ do
             >>= relativizeUrls
 
     match "drafts/*" $ do
-        route $ gsubRoute "drafts/" (const "_drafts/") `composeRoutes` setExtension "html"
+        route $ gsubRoute "drafts/" (const "_youneverknow$/") `composeRoutes` setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html" postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx

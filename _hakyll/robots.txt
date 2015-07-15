@@ -1,3 +1,0 @@
-Dissallow:
-
-_drafts/*
