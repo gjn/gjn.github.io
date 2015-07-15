@@ -13,6 +13,10 @@ conf = Hakyll.defaultConfiguration
 
 main :: IO ()
 main = hakyllWith conf $ do
+    match "robots.txt" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
@@ -25,6 +29,13 @@ main = hakyllWith conf $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= relativizeUrls
+
+    match "drafts/*" $ do
+        route $ gsubRoute "drafts/" (const "_drafts/") `composeRoutes` setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/post.html" postCtx
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
     match "posts/*/*/*" $ do

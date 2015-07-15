@@ -1,0 +1,3 @@
+Dissallow:
+
+_drafts/*
