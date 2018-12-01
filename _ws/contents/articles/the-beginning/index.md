@@ -15,7 +15,7 @@ is sent out by [PingDom](https://pingdom.com), a service
 that monitors services and applications on the internet and
 reports downtimes.
 
-A single downtime event will get you an warning email by Pingdom.
+A single downtime event will get you a warning email by Pingdom.
 Getting a text message however means trouble. It's caused by an
 incident: a repeated failure from multiple Probes to reach the 
 service. Being assertive, we quickly checked the service in question manually.
@@ -28,7 +28,7 @@ month. Incident via text message, manual checks couldn't conclusively confirm
 the downtime, text message announcing end of incident. And the incidents
 seemed to be randomly distributed among our services. One day, it was
 our search service being reported down, the other it was our main
-application. Also, th incidents could happen anytime: during lazy morning
+application. Also, the incidents could happen anytime: during lazy morning
 hours, peak hours just before lunch or even late at night.
 
 While the analysis of the incidents in rare cases did reveal flaws
@@ -61,16 +61,16 @@ We should have trusted PingDom. We should have investigated the problem much
 earlier under the assumptions that pingdom was, in fact, reporting downtimes
 correctly. PingDom didn't report false incidents. If anything, it reported
 not enough true incidents. But this was the result of how we set up
-our PingDom checks. A few services are checked very minute, most every
+our PingDom checks. A few services are checked every minute, most every
 5 minutes only. With the mini downtimes caused by Varnish, PingDom was simply
 lucky to hit such an event.
 
 ## Trust is good, control is better
 
 If you happen to mistrust one of your tools or some piece of software,
-test it heavily. Use alternative to test your tools. Ceate custom tests
+test it heavily. Use alternative to test your tools. Create custom tests
 to validate your tools. Do anything to confirm either your mistrust or the tool.
-The worst you can do is remainng in a state of insecurity  Get out of it.
+The worst you can do is remaining in a state of insecurity. Get out of it.
 
 ## How organisation impacts your work
 
@@ -78,7 +78,7 @@ The worst you can do is remainng in a state of insecurity  Get out of it.
 
 Apply a zero tolerance policy for all things in production. Even
 the slighest glitch is pointing to a more real, potentially severe problem
-that could make our services vurnerable.
+that could make our services vulnerable.
 
 Hunt them down mercilessly, until you fully understand their cause. Once
 we focused full time on the analysis of the misterious downtimes, we were
